@@ -1,6 +1,6 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
-from esphome.components.uptime.sensor import UptimeSecondsSensor
+from esphome.components.uptime import UptimeSensor
 
 from esphome.const import ENTITY_CATEGORY_DIAGNOSTIC, ICON_TIMER
 
