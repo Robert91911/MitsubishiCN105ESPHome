@@ -1,7 +1,5 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
-from esphome.components.uptime.sensor import UptimeSecondsSensor
-
 
 from esphome.const import ENTITY_CATEGORY_DIAGNOSTIC, ICON_TIMER
 
@@ -111,11 +109,6 @@ AutoSubModSensor = cg.global_ns.class_(
 )
 
 uptime_ns = cg.esphome_ns.namespace("uptime")
-uptime = uptime_ns.class_("UptimeSecondsSensor", sensor.Sensor, cg.Component)
-HpUpTimeConnectionSensor = uptime_ns.class_(
-    "HpUpTimeConnectionSensor", sensor.Sensor, cg.PollingComponent
-)
-
 
 def valid_uart(uart):
     if CORE.is_esp8266:
