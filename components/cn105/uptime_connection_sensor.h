@@ -1,5 +1,4 @@
 #pragma once
-#include <esphome/components/uptime/sensor/uptime_seconds_sensor.h>
 namespace esphome {
     namespace uptime {
 
